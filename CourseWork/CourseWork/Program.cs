@@ -11,12 +11,22 @@ namespace CourseWork
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
+        
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            ScreenSaver screenSaver = new ScreenSaver();
+            DateTime endTime = DateTime.Now + TimeSpan.FromSeconds(2);
+            screenSaver.Show();
+            
+            while (endTime > DateTime.Now)
+            {
+                Application.DoEvents();
+            }
+            screenSaver.Close();
+            screenSaver.Dispose();
+
+            Application.Run(new StartInfo());
         }
     }
 }

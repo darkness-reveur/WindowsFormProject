@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace CourseWork
 {
-    public partial class Form1 : Form
+    public partial class StartInfo : Form
     {
-        public Form1()
+        public StartInfo()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HelpBox helpBox = new HelpBox();
+            helpBox.Show();
         }
     }
 }
