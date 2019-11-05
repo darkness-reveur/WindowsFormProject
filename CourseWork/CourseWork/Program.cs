@@ -16,7 +16,7 @@ namespace CourseWork
         static void Main()
         {
             ScreenSaver screenSaver = new ScreenSaver();
-            DateTime endTime = DateTime.Now + TimeSpan.FromSeconds(2);
+            DateTime endTime = DateTime.Now + TimeSpan.FromSeconds(0.1);
             screenSaver.Show();
             
             while (endTime > DateTime.Now)

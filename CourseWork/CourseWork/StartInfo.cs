@@ -22,5 +22,11 @@ namespace CourseWork
             HelpBox helpBox = new HelpBox();
             helpBox.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Graph graph = new Graph();
+            graph.Show();
+        }
     }
 }
